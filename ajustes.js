@@ -1569,7 +1569,7 @@ catolicismo = [
             return 'cardeal-presbítero';
         }
     }, {
-        // Ordem invertida em inglês
+        // invertida em inglês
         reg: /\b[Pp]riest\s+[Cc]ardinal\b/g, subs: function (achou) {
             return 'cardeal-presbítero';
         }
@@ -1591,23 +1591,12 @@ catolicismo = [
             return '[[Santa Maria além do Tibre (título cardinalício)|Santa Maria além do Tibre]]';
         }
     }, {
-        // titulos específicos
         reg: /S. Maria in Trastevere/g, subs: function (achou) {
             return '[[Santa Maria além do Tibre (título cardinalício)|Santa Maria além do Tibre]]';
-        }
-
-
-    }, {
-        reg: /San Giorgio in Velabro/g, subs: function (achou) {
-            return '[[São Jorge em Velabro (diaconia)|São Jorge em Velabro]]';
         }
     }, {
         reg: /Santa Pudenziana/g, subs: function (achou) {
             return '[[Santa Pudenciana (título cardinalício)|Santa Prudenciana]]';
-        }
-    }, {
-        reg: /Santa Prassede/g, subs: function (achou) {
-            return '[[Santa Praxedes (título cardinalício)|Santa Praxedes]]';
         }
     }, {
         reg: /(?<![Dd]iocese\s)\b[Dd]e\s+Sabina\b/g, subs: function (achou) {
@@ -1638,7 +1627,6 @@ catolicismo = [
         reg: /\bde Santa Prisca\b/g, subs: function (achou) {
             return '[[Santa Priscila (título cardinalício)|Santa Priscila]]';
         }
-
     }, {
         reg: /(?<!\[\[)\b[Dd]e\s+Santa\s+Sabina\b/g, subs: function (achou) {
             return 'de [[Santa Sabina (título cardinalício)|Santa Sabina]]';
@@ -1651,63 +1639,33 @@ catolicismo = [
         reg: /\bde Santa Maria in Cosmedin\b/g, subs: function (achou) {
             return 'de [[Santa Maria em Cosmedin (diaconia)|Santa Maria em Cosmedin]]';
         }
-
     }, {
         reg: /\bSantos Vito e Modesto\b/g, subs: function (achou) {
             return '[[Santos Vito, Modesto e Crescência (diaconia)|Santos Vito, Modesto e Crescência]]';
         }
     }, {
-        reg: /\bde Santa Maria Nuova\b/g, subs: function (achou) {
-            return 'de [[Santa Maria da Scala (diaconia)|Santa Maria da Scala]]';
-        }
-    }, {
-        reg: /(?<!\[\[|\|)\bSanta Lúcia em Septisolio\b/g, subs: function (achou) {
-            return '[[Santa Lúcia em Septisolio (diaconia)|Santa Lúcia em Septisolio]]';
-        }
-    }, {
-        reg: /(?<!\[\[|\|)\bS. Lucia em Septisolio\b/g, subs: function (achou) {
-            return '[[Santa Lúcia em Septisolio (diaconia)|Santa Lúcia em Septisolio]]';
-        }
-    }, {
-        reg: /\bSan Giorgio em Velabro\b/g, subs: function (achou) {
-            return '[[São Jorge em Velabro (diaconia)|São Jorge em Velabro]]';
-        }
-    }, {
         reg: /\bSanta Maria in Domnica\b/g, subs: function (achou) {
             return '[[Santa Maria em Domnica (diaconia)|Santa Maria em Domnica]]';
         }
-
     }, {
         reg: /\bSanta Susanna\b/g, subs: function (achou) {
             return '[[Santa Susana (título cardinalício)|Santa Susana]]';
         }
-
-
     }, {
         reg: /(?<![Dd]iocese\s)\b[Dd]e\s+Albano\b/g, subs: function (achou) {
             return 'de [[Diocese de Albano|Albano]]';
         }
-
     }, {
         reg: /(?<![Dd]iocese\s)\b[Dd]e\s+Palestrina\b/g, subs: function (achou) {
             return 'de [[Diocese de Palestrina|Palestrina]]';
         }
-
     }, {
         reg: /(?<![Dd]iocese\s)\b[Dd]e\s+Frascati\b/g, subs: function (achou) {
             return 'de [[Diocese de Frascati|Frascati]]';
         }
     }, {
-        reg: /\bde Santa Cecilia\b/g, subs: function (achou) {
-            return 'de [[Santa Cecília (título cardinalício)|Santa Cecília]]';
-        }
-    }, {
         reg: /\bSantos Quattro Coronati\b/g, subs: function (achou) {
             return '[[Quatro Santos Coroados (título cardinalício)|Quatro Santos Coroados]]';
-        }
-    }, {
-        reg: /\bSan Marcello\b/g, subs: function (achou) {
-            return '[[São Marcelo (título cardinalício)|São Marcelo]]';
         }
     }, {
         reg: /(?<!\[\[|\|)\bSantos Marcelino e Pedro\b/g, subs: function (achou) {
@@ -1734,37 +1692,12 @@ catolicismo = [
             return 'dos [[Santos Vital, Valéria, Gervásio e Protásio (título cardinalício)|Santos Vital, Valéria, Gervásio e Protásio]]';
         }
     }, {
-        reg: /\bSanta Maria no Portico Octaviae\b/g, subs: function (achou) {
-            return '[[Santa Maria no Pórtico de Otávia (diaconia)|Santa Maria no Pórtico de Otávia]]';
-        }
-    }, {
         reg: /\bde San Teodoro\b/g, subs: function (achou) {
             return 'de [[São Teodoro (diaconia)|São Teodoro]]';
         }
-
     }, {
-        reg: /\bSantos Sylvester e Martin\b/g, subs: function (achou) {
-            return '[[Santos Silvestre e Martinho nos Montes (título cardinalício)|Santos Silvestre e Martinho nos Montes]]';
-        }
-    }, {
-        reg: /Santos Silvestro e Martino/g, subs: function (achou) {
-            return '[[Santos Silvestre e Martinho nos Montes (título cardinalício)|Santos Silvestre e Martinho nos Montes]]';
-        }
-    }, {
-        reg: /\bSantos Silvestre e Martino ai Monti\b/g, subs: function (achou) {
-            return '[[Santos Silvestre e Martinho nos Montes (título cardinalício)|Santos Silvestre e Martinho nos Montes]]';
-        }
-    }, {
-        reg: /\bSanti Silvestro e Martino ai Monti\b/g, subs: function (achou) {
-            return '[[Santos Silvestre e Martinho nos Montes (título cardinalício)|Santos Silvestre e Martinho nos Montes]]';
-        }
-    }, {
-        reg: /\bSantos Sylvester e Martino ai Monti\b/g, subs: function (achou) {
-            return '[[Santos Silvestre e Martinho nos Montes (título cardinalício)|Santos Silvestre e Martinho nos Montes]]';
-        }
-    }, {
-        reg: /\bda SS. Silvestro e Martino\b/g, subs: function (achou) {
-            return 'dos [[Santos Silvestre e Martinho nos Montes (título cardinalício)|Santos Silvestre e Martinho nos Montes]]';
+        reg: /\bdi San Teodoro\b/g, subs: function (achou) {
+            return 'de [[São Teodoro (diaconia)|São Teodoro]]';
         }
     }, {
         reg: /\bSanto Stefano em Monte Celio\b/g, subs: function (achou) {
@@ -1777,10 +1710,6 @@ catolicismo = [
     }, {
         reg: /\bS. Stefano em Celiomonte\b/g, subs: function (achou) {
             return '[[Santo Estêvão no Monte Celio (título cardinalício)|Santo Estêvão no Monte Celio]]';
-        }
-    }, {
-        reg: /\bSanta Croce in Gerusalemme\b/g, subs: function (achou) {
-            return '[[Santa Cruz de Jerusalém (título cardinalício)|Santa Cruz de Jerusalém]]';
         }
     }, {
         reg: /(?<!\[\[|\|)\bSanta Maria em Domnica\b/g, subs: function (achou) {
@@ -1799,25 +1728,8 @@ catolicismo = [
             return '[[Santa Águeda dos Góticos (diaconia)|Santa Águeda dos Góticos]]';
         }
     }, {
-        reg: /\bSant'Angelo in Pescheria\b/g, subs: function (achou) {
-            return '[[Santo Ângelo em Pescheria (diaconia)|Santo Ângelo em Pescheria]]';
-        }
-    }, {
-        reg: /\bSan Lorenzo in Damaso\b/g, subs: function (achou) {
-            return '[[São Lourenço em Dâmaso (título cardinalício)|São Lourenço em Dâmaso]]';
-        }
-    }, {
-        reg: /\bSan Lorenzo em Damaso\b/g, subs: function (achou) {
-            return 'de [[São Lourenço em Dâmaso (título cardinalício)|São Lourenço em Dâmaso]]';
-        }
-    }, {
-        reg: /\bS. Lorenzo em Damaso\b/g, subs: function (achou) {
-            return 'de [[São Lourenço em Dâmaso (título cardinalício)|São Lourenço em Dâmaso]]';
-        }
-
-    }, {
-        reg: /\bde San Lorenzo in Lucina\b/g, subs: function (achou) {
-            return 'de [[São Lourenço em Lucina (título cardinalício)|São Lourenço em Lucina]]';
+        reg: /\bSan Lorenzo in Lucina\b/g, subs: function (achou) {
+            return '[[São Lourenço em Lucina (título cardinalício)|São Lourenço em Lucina]]';
         }
     }, {
         reg: /\bde S. Lorenzo em Lucina\b/g, subs: function (achou) {
@@ -1827,11 +1739,6 @@ catolicismo = [
         reg: /\bde S. Lorenzo in Lucina\b/g, subs: function (achou) {
             return 'de [[São Lourenço em Lucina (título cardinalício)|São Lourenço em Lucina]]';
         }
-    }, {
-        reg: /\bS. Maria na Via Lata\b/g, subs: function (achou) {
-            return '[[Santa Maria em Via Lata (diaconia)|Santa Maria em Via Lata]]';
-        }
-
     }, {
         reg: /(?<!\[\[|\|)\bSantos Sérgio e Baco\b/g, subs: function (achou) {
             return '[[Santos Sérgio e Baco (diaconia)|Santos Sérgio e Baco]]';
@@ -1861,6 +1768,10 @@ catolicismo = [
             return 'dos [[Santos Cosme e Damião (diaconia)|Santos Cosme e Damião]]';
         }
     }, {
+        reg: /\bSanti Cosma e Damiano\b/g, subs: function (achou) {
+            return '[[Santos Cosme e Damião (diaconia)|Santos Cosme e Damião]]';
+        }
+    }, {
         reg: /\bde San Marco\b/g, subs: function (achou) {
             return 'de [[São Marcos (título cardinalício)|São Marcos]]';
         }
@@ -1877,8 +1788,6 @@ catolicismo = [
         reg: /\bS. Maria in Aquiro\b/g, subs: function (achou) {
             return '[[Santa Maria em Aquiro (diaconia)|Santa Maria em Aquiro]]';
         }
-
-
     }, {
         reg: /\bSan Nicola em Carcere\b/g, subs: function (achou) {
             return '[[São Nicolau no Cárcere (diaconia)|São Nicolau no Cárcere]]';
@@ -1917,7 +1826,119 @@ catolicismo = [
         reg: /\bS. Eustáquio\b/g, subs: function (achou) {
             return '[[Santo Eustáquio (diaconia)|Santo Eustáquio]]';
         }
+    }, {
+        reg: /\bde Sant'Anastasia\b/g, subs: function (achou) {
+            return 'de [[Santa Anastácia (título cardinalício)|Santa Anastácia]]';
+        }
+    }, {
+        reg: /\bde S. Anastasia\b/g, subs: function (achou) {
+            return 'de [[Santa Anastácia (título cardinalício)|Santa Anastácia]]';
+        }
+    }, {
+        reg: /(?<!\[\[|\|)\bSanta Lúcia em Septisolio\b/g, subs: function (achou) {
+            return '[[Santa Lúcia em Septisolio (diaconia)|Santa Lúcia em Septisolio]]';
+        }
+    }, {
+        reg: /(?<!\[\[|\|)\bS. Lucia em Septisolio\b/g, subs: function (achou) {
+            return '[[Santa Lúcia em Septisolio (diaconia)|Santa Lúcia em Septisolio]]';
+        }
+    }, {
+        reg: /(?<!\[\[|\|)\bSanta Lucia in Septisolio\b/g, subs: function (achou) {
+            return '[[Santa Lúcia em Septisolio (diaconia)|Santa Lúcia em Septisolio]]';
+        }
+    }, {
+        reg: /\bS. Maria na Via Lata\b/g, subs: function (achou) {
+            return '[[Santa Maria em Via Lata (diaconia)|Santa Maria em Via Lata]]';
+        }
+    }, {
+        reg: /\bSanta Maria in Via Lata\b/g, subs: function (achou) {
+            return '[[Santa Maria em Via Lata (diaconia)|Santa Maria em Via Lata]]';
+        }
+    }, {
+        reg: /\bSanta Maria na Via Lata\b/g, subs: function (achou) {
+            return '[[Santa Maria em Via Lata (diaconia)|Santa Maria em Via Lata]]';
+        }
+        // }, {
+        //     reg: /\bde Santa Maria Nuova\b/g, subs: function (achou) {
+        //         return 'de [[Santa Maria da Scala (diaconia)|Santa Maria da Scala]]';
+        //     }
 
+        //         }, {
+        //     reg: /\bSanta Maria Nuova\b/g, subs: function (achou) {
+        //         return '[[Santa Maria Nova (título cardinalício)|Santa Maria Nova]]';
+        //     }
+    }, {
+        reg: /\bSanta Croce in Gerusalemme\b/g, subs: function (achou) {
+            return '[[Santa Cruz de Jerusalém (título cardinalício)|Santa Cruz de Jerusalém]]';
+        }
+    }, {
+        reg: /\bS. Croce in Gerusalemme\b/g, subs: function (achou) {
+            return '[[Santa Cruz de Jerusalém (título cardinalício)|Santa Cruz de Jerusalém]]';
+        }
+    }, {
+        reg: /\bSan Lorenzo in Damaso\b/g, subs: function (achou) {
+            return '[[São Lourenço em Dâmaso (título cardinalício)|São Lourenço em Dâmaso]]';
+        }
+    }, {
+        reg: /\bSan Lorenzo em Damaso\b/g, subs: function (achou) {
+            return '[[São Lourenço em Dâmaso (título cardinalício)|São Lourenço em Dâmaso]]';
+        }
+    }, {
+        reg: /\bS. Lorenzo em Damaso\b/g, subs: function (achou) {
+            return '[[São Lourenço em Dâmaso (título cardinalício)|São Lourenço em Dâmaso]]';
+        }
+    }, {
+        reg: /\bS. Lorenzo in Damaso\b/g, subs: function (achou) {
+            return '[[São Lourenço em Dâmaso (título cardinalício)|São Lourenço em Dâmaso]]';
+        }
+    }, {
+        reg: /\bSantos XII Apóstolos\b/g, subs: function (achou) {
+            return '[[Santos Doze Apóstolos (título cardinalício)|Santos Doze Apóstolos]]';
+        }
+    }, {
+        reg: /\bda SS. XII Apostoli\b/g, subs: function (achou) {
+            return 'dos [[Santos Doze Apóstolos (título cardinalício)|Santos Doze Apóstolos]]';
+        }
+    }, {
+        reg: /\bdas SS. XII Apostoli\b/g, subs: function (achou) {
+            return 'dos [[Santos Doze Apóstolos (título cardinalício)|Santos Doze Apóstolos]]';
+        }
+    }, {
+        reg: /San Giorgio in Velabro/g, subs: function (achou) {
+            return '[[São Jorge em Velabro (diaconia)|São Jorge em Velabro]]';
+        }
+    }, {
+        reg: /\bSan Giorgio em Velabro\b/g, subs: function (achou) {
+            return '[[São Jorge em Velabro (diaconia)|São Jorge em Velabro]]';
+        }
+    }, {
+        reg: /\bS. Giorgio em Velabro\b/g, subs: function (achou) {
+            return '[[São Jorge em Velabro (diaconia)|São Jorge em Velabro]]';
+        }
+    }, {
+        reg: /Santa Prassede/g, subs: function (achou) {
+            return '[[Santa Praxedes (título cardinalício)|Santa Praxedes]]';
+        }
+    }, {
+        reg: /S. Prassede/g, subs: function (achou) {
+            return '[[Santa Praxedes (título cardinalício)|Santa Praxedes]]';
+        }
+    }, {
+        reg: /\bde Santa Cecilia\b/g, subs: function (achou) {
+            return 'de [[Santa Cecília (título cardinalício)|Santa Cecília]]';
+        }
+    }, {
+        reg: /\bde S. Cecilia\b/g, subs: function (achou) {
+            return 'de [[Santa Cecília (título cardinalício)|Santa Cecília]]';
+        }
+    }, {
+        reg: /\bSan Marcello\b/g, subs: function (achou) {
+            return '[[São Marcelo (título cardinalício)|São Marcelo]]';
+        }
+    }, {
+        reg: /\bS. Marcello\b/g, subs: function (achou) {
+            return '[[São Marcelo (título cardinalício)|São Marcelo]]';
+        }
     }, {
         reg: /\bdos Santos João e Paulo\b/g, subs: function (achou) {
             return 'de [[São João e São Paulo (título cardinalício)|São João e São Paulo]]';
@@ -1927,36 +1948,77 @@ catolicismo = [
             return 'de [[São João e São Paulo (título cardinalício)|São João e São Paulo]]';
         }
     }, {
-        reg: /\bde Sant'Anastasia\b/g, subs: function (achou) {
-            return 'de [[Santa Anastácia (título cardinalício)|Santa Anastácia]]';
+        reg: /\bdas SS. Giovanni e Paolo\b/g, subs: function (achou) {
+            return 'de [[São João e São Paulo (título cardinalício)|São João e São Paulo]]';
         }
     }, {
-        reg: /\bde S. Anastasia\b/g, subs: function (achou) {
-            return 'de [[Santa Anastácia (título cardinalício)|Santa Anastácia]]';
+        reg: /\bSant'Angelo in Pescheria\b/g, subs: function (achou) {
+            return '[[Santo Ângelo em Pescheria (diaconia)|Santo Ângelo em Pescheria]]';
         }
-
+    }, {
+        reg: /\bde S. Angelo\b/g, subs: function (achou) {
+            return 'de [[Santo Ângelo em Pescheria (diaconia)|Santo Ângelo em Pescheria]]';
+        }
+    }, {
+        reg: /\bSanta Maria no Portico Octaviae\b/g, subs: function (achou) {
+            return '[[Santa Maria no Pórtico de Otávia (diaconia)|Santa Maria no Pórtico de Otávia]]';
+        }
+    }, {
+        reg: /\bSanta Maria in Portico Octaviae\b/g, subs: function (achou) {
+            return '[[Santa Maria no Pórtico de Otávia (diaconia)|Santa Maria no Pórtico de Otávia]]';
+        }
+    }, {
+        reg: /\bSanta Maria no Pórtico Octaviae\b/g, subs: function (achou) {
+            return '[[Santa Maria no Pórtico de Otávia (diaconia)|Santa Maria no Pórtico de Otávia]]';
+        }
+    }, {
+        reg: /\bSanta Maria em Portico Octaviae\b/g, subs: function (achou) {
+            return '[[Santa Maria no Pórtico de Otávia (diaconia)|Santa Maria no Pórtico de Otávia]]';
+        }
+    }, {
+        reg: /\bSantos Sylvester e Martin\b/g, subs: function (achou) {
+            return '[[Santos Silvestre e Martinho nos Montes (título cardinalício)|Santos Silvestre e Martinho nos Montes]]';
+        }
+    }, {
+        reg: /Santos Silvestro e Martino/g, subs: function (achou) {
+            return '[[Santos Silvestre e Martinho nos Montes (título cardinalício)|Santos Silvestre e Martinho nos Montes]]';
+        }
+    }, {
+        reg: /\bSantos Silvestre e Martino ai Monti\b/g, subs: function (achou) {
+            return '[[Santos Silvestre e Martinho nos Montes (título cardinalício)|Santos Silvestre e Martinho nos Montes]]';
+        }
+    }, {
+        reg: /\bSanti Silvestro e Martino ai Monti\b/g, subs: function (achou) {
+            return '[[Santos Silvestre e Martinho nos Montes (título cardinalício)|Santos Silvestre e Martinho nos Montes]]';
+        }
+    }, {
+        reg: /\bSantos Sylvester e Martino ai Monti\b/g, subs: function (achou) {
+            return '[[Santos Silvestre e Martinho nos Montes (título cardinalício)|Santos Silvestre e Martinho nos Montes]]';
+        }
+    }, {
+        reg: /\bda SS. Silvestro e Martino\b/g, subs: function (achou) {
+            return 'dos [[Santos Silvestre e Martinho nos Montes (título cardinalício)|Santos Silvestre e Martinho nos Montes]]';
+        }
+    }, {
+        reg: /\bsantos Sylvester e Martino ai Monti\b/g, subs: function (achou) {
+            return '[[Santos Silvestre e Martinho nos Montes (título cardinalício)|Santos Silvestre e Martinho nos Montes]]';
+        }
     }, {
         reg: /(?<![Dd]iocese\s)\b[Dd]e\s+Porto e Silva Candida\b/g, subs: function (achou) {
-            return 'de [[Diocese de Porto-Santa Rufina|Porto e Silva Candida]]';
+            return 'de [[Diocese de Porto-Santa Rufina|Porto-Santa Rufina]]';
         }
     }, {
         reg: /(?<![Dd]iocese\s)\b[Dd]e\s+Porto e S. Rufina\b/g, subs: function (achou) {
-            return 'de [[Diocese de Porto-Santa Rufina|Porto e Silva Candida]]';
-        }
-
-        //
-        //
-    }, {
-        reg: /\bSantos XII Apóstolos\b/g, subs: function (achou) {
-            return '[[Santos Doze Apóstolos (título cardinalício)|Santos Doze Apóstolos]]';
+            return 'de [[Diocese de Porto-Santa Rufina|Porto-Santa Rufina]]';
         }
     }, {
-        reg: /\bda SS. XII Apostoli\b/g, subs: function (achou) {
-            return 'dos [[Santos Doze Apóstolos (título cardinalício)|Santos Doze Apóstolos]]';
+        reg: /(?<![Dd]iocese\s)\b[Dd]e\s+Porto e Santa Rufina\b/g, subs: function (achou) {
+            return 'de [[Diocese de Porto-Santa Rufina|Porto-Santa Rufina]]';
         }
-
-        //
-        //
+    }, {
+        reg: /(?<![Dd]iocese\s)\b[Dd]o\s+Porto e Santa Rufina\b/g, subs: function (achou) {
+            return 'de [[Diocese de Porto-Santa Rufina|Porto-Santa Rufina]]';
+        }
     }, {
         // expressões com "criado"
         reg: /\bCriado\s+diácono\s+cardeal\b/g, subs: function (achou) {
@@ -1987,7 +2049,7 @@ catolicismo = [
             return 'criado cardeal-diácono';
         }
     }, {
-        // Variações sem acento
+        // variações sem acento
         reg: /\bcriado\s+presbitero\s+cardeal\b/g, subs: function (achou) {
             return 'criado cardeal-presbítero';
         }
@@ -2045,14 +2107,22 @@ catolicismo = [
         reg: /\bfeito\s+[Dd]iacono\s+[Cc]ardeal\b/g, subs: function (achou) {
             return 'feito cardeal-diácono';
         }
+        // outras subst
     }, {
-        // substituições diretas
         reg: /\bcardeal-sacerdote\b/g, subs: function (achou) {
             return 'cardeal-presbítero';
         }
+    }, {
+        // em italiano
+        reg: /\bdiaconia ignota\b/g, subs: function (achou) {
+            return 'diaconia desconhecida';
+        }
+    }, {
+        reg: /\btitolo ignoto\b/g, subs: function (achou) {
+            return 'título desconhecido';
+        }
     }
 ]
-
 
 geral = [
     {
